@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_php_api/views/home.dart';
 import 'package:flutter_php_api/views/index.dart';
 import 'package:flutter_php_api/views/login.dart';
+import 'package:flutter_php_api/views/register.dart';
 
 void main() {
   runApp(MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       '/': (context) => Home(),
       '/login': (context) => Login(),
       '/index': (context) => Index(),
+      '/register': (context) => Register(),
     },
     );
   }

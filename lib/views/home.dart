@@ -15,9 +15,10 @@ class _HomeState extends State<Home> {
       ),
       body: Center(
           child: Container(
-            child: Column(
-              children: [
-                RaisedButton(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            RaisedButton(
                 color: Colors.deepPurple,
                 child: Text(
                   'Login',
@@ -26,9 +27,16 @@ class _HomeState extends State<Home> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/login');
                 }),
-            
+            RaisedButton(
+                color: Colors.deepPurple,
+                child: Text(
+                  'Regster',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/register');
+                }),
           ],
-          
         ),
       )),
     );
